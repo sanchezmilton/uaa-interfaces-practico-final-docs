@@ -55,10 +55,10 @@ Las tablas y relaciones se definen de la siguiente forma:
 2. **Services**: Define los tipos de servicios que pueden ser reservados.
 	- `id`, `name`, `description`
 
-3. **Turnos**: Almacena cada turno disponible o no disponible a ser tomado, con el servicio asociado.
+3. **Appointments**: Almacena cada turno disponible o no disponible a ser tomado, con el servicio asociado.
 	- `id`, `service_id`, `date`, `status`
 
-4. **Turnos_Usuarios**: Almacena cada turno reservado, con relación a un usuario.
+4. **Users_Appointments**: Almacena cada turno reservado, con relación a un usuario.
 	- `id`, `us_id`, `profesional_id`, `servicio_id`, `fecha`, `hora`, `estado`
 
 
@@ -118,25 +118,3 @@ Haz bocetos de cada página:
 1. **Página Principal:** Información general y botones de acceso.
 2. **Página de Reserva de Turno:** Formulario para seleccionar profesional, fecha y hora.
 3. **Gestión de Turnos Cliente/Admin:** Listado de turnos con opciones para editar/cancelar.
-
----
-
-## 9. Pruebas
-### 9.1 Pruebas Funcionales
-- Flujos de usuario para registro, login, y reserva de turno.
-- Acceso del administrador a la gestión de turnos, profesionales y servicios.
-
-### 9.2 Pruebas de Seguridad
-- Simulación de ataques SQL Injection y XSS.
-- Validación de que cada usuario solo puede ver y editar sus propios turnos.
-
----
-
-## 10. Documentación Técnica
-- **Manual de Usuario**: Guía para usuarios y administradores.
-- **Manual de Instalación**: Instrucciones para configurar XAMPP, Laravel y MySQL.
-- **Manual de Administración**: Guía para el administrador.
-
----
-
-Con estos cambios, el sistema tiene todas las funcionalidades requeridas y está correctamente documentado para cada etapa del desarrollo. ¡Éxito con el proyecto!
